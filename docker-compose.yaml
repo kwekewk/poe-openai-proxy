@@ -1,5 +1,8 @@
 version: '3'
-
+x-uffizzi:
+  ingress:
+    service: poe-openai-proxy
+    port: 8080
 services:
   poe-openai-proxy:
     container_name: poe-openai-proxy
